@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="use_color"         default="false"/>
+
+  <node pkg="hkcamera_bridge" type="hkcamera_bridge" name="hkcamera_bridge" output="screen">
+     <param name="use_color" type="bool" value="$(arg use_color)"/>
+  </node>
+
+</launch>
+
